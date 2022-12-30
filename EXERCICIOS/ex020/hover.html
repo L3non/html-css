@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hover Example</title>
+   <style>
+      body{
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div > p{ /*p is child of div*/
+         display: none;
+      }
+
+      div:hover > p{
+         display: block;
+         color: white;
+         background-color: red;
+         width: 300px;
+      }
+
+      div:hover{
+         color: red;
+      }
+   </style>
+</head>
+<body>
+   <h1>Hover example</h1>
+   <p>hover over the text below</p>
+   <div>
+      Mouse over here
+      <p>HIDDEN TEXT...</p>
+   </div>
+   <p>Example end</p>
+</body>
+</html>

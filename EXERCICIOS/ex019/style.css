@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+   id = #  single
+   class = .  multiple
+*/
+
+body{
+   background-color: #ffa8ab;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+   color: #3B1213;
+}
+
+#main{
+   text-align: center;
+   background-color: #7A2528;
+   color: white;
+}
+
+h2{
+   color: #7c191c;
+}
+
+.basic{
+   color: #2a7c19;
+}
+
+.intermediary{
+   color: #7a7c19;
+}
+
+.advanced{
+   color: #7c191c;
+}
+
+.emphasis{
+   background-color: rgba(197,197,96,0.438);
+}
