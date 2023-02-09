@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+</head>
+<body>
+   <h1>Form Example</h1>
+   <form action="register.php" method="get" autocomplete="on">
+      <p>
+         <label for="ista">State: </label>
+         <select name="sta" id="ista">
+
+            <option value="" selected>--- Choose ---</option>
+            <optgroup label="Southeast region">
+               <option value="MG">Minas Gerais</option>
+               <option value="RJ">Rio de Janeiro</option>
+               <option value="SP">São Paulo</option>
+            </optgroup>
+
+            <optgroup label="Northeast region">
+               <option value="MA">Maranhão</option>
+               <option value="PE">Pernambuco</option>
+               <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+         </select>
+      </p>
+
+      <p>
+         <label for="iprof">Profession: </label>
+         <input type="text" name="prof" id="iprof" list="proflst">
+         <datalist id="proflst">
+            <option value="ADM">Administrador</option>
+            <option value="ACC">Accountant</option>
+            <option value="DEV">Developer</option>
+            <option value="TEA">Teacher</option>
+         </datalist>
+      </p>
+
+      <p>
+         <label for="imsg">Message: </label><br>
+         <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+      </p>
+
+      <p>
+         <input type="submit" value="Submit">
+         <input type="reset" value="Clean">
+      </p>
+   </form>
+</body>
+</html>
