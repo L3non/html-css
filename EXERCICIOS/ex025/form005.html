@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+</head>
+<body>
+   <h1>Form Example</h1>
+   <form action="register.php" method="get" autocomplete="on">
+      <fieldset>
+         <legend>Sex</legend>
+         <input type="radio" name="sex" id="isxmal" value="M"> <label for="isxmal">Male</label><br>
+         <input type="radio" name="sex" id="isxfem" value="F" checked> <label for="isxfem">Female</label>
+      </fieldset>
+      <fieldset>
+         <legend>Favorite sports</legend>
+         <input type="checkbox" name="spbas" id="ispbas" checked> <label for="ispbas">Basket</label><br>
+         <input type="checkbox" name="spsoc" id="ispsoc" checked> <label for="ispsoc">Soccer</label><br>
+         <input type="checkbox" name="spswi" id="ispswi"> <label for="ispswi">Swimming</label><br>
+         <input type="checkbox" name="spten" id="ispten"> <label for="ispten">Tennis</label><br>
+      </fieldset>
+
+      <p>
+         <input type="submit" value="Submit">
+         <input type="reset" value="Clean">
+      </p>
+   </form>
+</body>
+</html>
