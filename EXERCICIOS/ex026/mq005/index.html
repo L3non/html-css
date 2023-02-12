@@ -6,12 +6,13 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Media Query</title>
    <link rel="stylesheet" href="styles/style.css">
+   <link rel="stylesheet" href="styles/media-query.css">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="changeSize()">
    <header>
       <h1>My Website</h1>
-      <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+      <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
       <menu id="itens">
          <ul>
             <li><a href="#">Option 1</a></li>
@@ -30,6 +31,15 @@
    </main>
 
    <script>
+
+      function changeSize(){
+         if (window.innerWidth >= 769){
+            itens.style.display = 'block'
+         } else{
+            itens.style.display = 'none'
+         }
+      }
+
       function clickMenu(){
          if(itens.style.display == 'block'){
             itens.style.display = 'none'
